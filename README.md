@@ -14,22 +14,22 @@ filling anymore than 10000 tiles at a time it probably wont be necessary.
 Version 0.3 also contains many bug fixes, reworks and QOL improvements such as the following:
 
 -Drawing a rectangle no longer searches through every tile and checks if tile is contained 
- within selection. Now we only search tiles between pointA (mouse press point) and pointB 
- (mouse current point).
+ within selection. Now we only search tiles between your mouse press and your current mouse point.
 
 -Fixed the "Undo" bug where it would get disabled after switching layers. This was due to the
  map losing focus after a button press.
 
 -Reworked zooming in and out. Before, the zooming effect was done by changing the scale of the
- tiles. This was flawed because zooming would drag to the left of the screen, and not relative to 
- the mouse position.
+ tiles. This was flawed because zooming in/out would drag the screen to the left, and it wasnt
+ relative to the mouse position (which it now is).
  
--Changed how the properties grid and layer numbers are shown. Instead of drawing an idividual 
- square around each tile, we now just draw straight lines vertically and horizontally across 
- the map. 
+-Changed how the grid and layer numbers are shown when tile properties is turned on. Instead 
+ of drawing an idividual square around each tile, we now just draw straight lines vertically 
+ and horizontally across the map. 
  
 -Changed how the checkered background is drawn. We now only draw the background tile if there 
- are no tiles to draw draw on top of it (cause you cant see it if theres a tile ontop of it).
+ are no tiles to draw draw on top of it (cause you cant see the background if there is a tile 
+ on top of it).
  
-There are a few more changes that were made but these were the major ones. Please let me know 
-of suggestions, bugs, or problems you have.
+There are a few more changes that were made but these were just the major ones. Please let me 
+know of any suggestions, bugs, or problems you might have.
